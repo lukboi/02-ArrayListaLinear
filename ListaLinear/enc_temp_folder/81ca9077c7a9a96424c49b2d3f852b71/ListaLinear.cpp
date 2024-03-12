@@ -107,15 +107,17 @@ void buscarElemento()
 {
 int numberToFind = 0;
 bool find = false;
+int contador = 0;
 cout << "Digite o numero a ser achado: ";
 cin >> numberToFind;
 	for (int i = 0; i < nElementos; i++) {
 			if (numberToFind == lista[i]) {
+				contador++;
 				cout << "O numero esta na posicao: " << i << " da lista." << endl;
 				find = true;
 			}
 	}
-	if (!find) {
+	if (find == false) {
 		cout << "O numero nao esta na lista" << endl;
 	}
 }
